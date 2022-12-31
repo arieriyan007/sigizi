@@ -25,12 +25,11 @@
                                     <?php 
                                     if (isset($_GET['pesan'])) {
                                         if ($_GET['pesan']=="logout") {
-                                            echo "<div class='alert alert-info' role='alert'>Anda Telah Logout</div>";
+                                            echo "<div class='alert alert-info text-center' role='alert'><b>Anda Telah Logout</b></div>";
                                         }
                                     }
                                     ?>
                                     <!-- akhir notifikasi -->
-
 
                                         <form method="post" action="loginAksi.php">
                                             <div class="form-floating mb-3">
