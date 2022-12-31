@@ -14,7 +14,7 @@
 
     <?php 
     include '../koneksi.php';
-    include 'ceklogin.php';
+    include '../views/ceklogin.php';
     ?>
 
     <body class="sb-nav-fixed">
