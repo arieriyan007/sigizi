@@ -1,8 +1,3 @@
-<?php 
-include '../koneksi.php';
-include '../views/ceklogin.php';
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,6 +11,12 @@ include '../views/ceklogin.php';
         <link href="../css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
+
+    <?php 
+    include '../koneksi.php';
+    include 'ceklogin.php';
+    ?>
+
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->

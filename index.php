@@ -26,6 +26,8 @@
                                     if (isset($_GET['pesan'])) {
                                         if ($_GET['pesan']=="logout") {
                                             echo "<div class='alert alert-info text-center' role='alert'><b>Anda Telah Logout</b></div>";
+                                        } if ($_GET['pesan']=="gagal") {
+                                            echo "<div class='alert alert-danger text-center'>Maaf! Username & Password Salah!</div>";
                                         }
                                     }
                                     ?>
