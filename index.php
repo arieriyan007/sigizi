@@ -20,6 +20,18 @@
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
                                     <div class="card-header"><h3 class="text-center font-weight-light my-4">Login Aplikasi</h3></div>
                                     <div class="card-body">
+
+                                    <!-- notifikasi -->
+                                    <?php 
+                                    if (isset($_GET['pesan'])) {
+                                        if ($_GET['pesan']=="logout") {
+                                            echo "<div class='alert alert-info' role='alert'>Anda Telah Logout</div>";
+                                        }
+                                    }
+                                    ?>
+                                    <!-- akhir notifikasi -->
+
+
                                         <form method="post" action="loginAksi.php">
                                             <div class="form-floating mb-3">
                                                 <input class="form-control" name="name" id="inputName" type="text" placeholder="Masukkan Username" />
