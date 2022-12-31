@@ -23,11 +23,13 @@
 
                                     <!-- notifikasi -->
                                     <?php 
-                                    if (isset($_GET['pesan'])) {
-                                        if ($_GET['pesan']=="logout") {
+                                    if (isset($_GET['status'])) {
+                                        if ($_GET['status']=="logout") {
                                             echo "<div class='alert alert-info text-center' role='alert'><b>Anda Telah Logout</b></div>";
-                                        } if ($_GET['pesan']=="gagal") {
+                                        } if ($_GET['status']=="gagal") {
                                             echo "<div class='alert alert-danger text-center'>Maaf! Username & Password Salah!</div>";
+                                        } if ($_GET['status']=="belumlogin") {
+                                            echo "<div class='alert alert-danger text-center'><b>Anda belum melakukan Login</b></div>";
                                         }
                                     }
                                     ?>
@@ -61,11 +63,11 @@
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; Your Website 2022</div>
+                            <div class="text-muted">Copyright &copy; www.marinapermatahospital.com</div>
                             <div>
                                 <a href="#">Privacy Policy</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Team &amp; IT RSMP</a>
                             </div>
                         </div>
                     </div>
